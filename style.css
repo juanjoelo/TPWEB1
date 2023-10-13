@@ -117,7 +117,12 @@ img{
 .carrusel{
     width: 600px;
 }
-   
+.slider-izquierdo .slider-derecho {
+    width: 5%;
+}
+.slider-izquierdo img, .slider-derecho img {
+    width: 10%;
+}
 
 
 

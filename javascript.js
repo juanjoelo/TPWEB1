@@ -4,12 +4,26 @@ function paginaInicio() {
 function paginaContacto() {
   window.location.href = "contacto.html";
 }
+var imagenes = [
+  "IMAGENES/bowie.png",
+  "IMAGENES/cerati.png",
+  "IMAGENES/parte de la religion FINAL.png",
+  "IMAGENES/strokes.png",
+];
+document.getElementById("Imagen").src = imagenes[0];
+
 const contenedor = document.querySelector(".contenedorCarrusel");
-const botonesIzquierda = document.querySelector(".izq");
-const botonesDerecha = document.querySelector(".der");
+const botonesIzquierda = document.querySelector(".slider-izquierdo");
+const botonesDerecha = document.querySelector(".slider-derecho");
 
-let index = 0;
-
-function cambiarImagen(index) {
-  contenedor.style.transform = "translateX(-400%)";
+let siliderDerecha = document.querySelector(".der");
+let sliderIzquierda = document.querySelector(".izq");
+let contador = 0;
+function moverDerecha() {
+  contador++;
+  if (contador > imagenes.length - 1) {
+    contador = 0;
+  }
+  document.Imagen.src = imagenes[contador];
 }
+botonesDerecha.addEventListener("click", moverDerecha);
