@@ -106,40 +106,55 @@
 .contenedor-slider{
     display: flex;
     flex-direction: row;
-    gap: 40px;
     padding: 0px 40px;
-   
-
+    width: 800px;
+    margin: auto;
     justify-content: center;
-  align-items: center;
+    align-items: center;
     
     
 }
+
+
 .slider-screen{
     flex: 1;
     text-align: center;
+    width:400px ;
     
 }
 
 .slider-screen img{
-    width:50%;
+    width:600px;
     transition: width 0.5s;
 
 }
 
 
 
-.slider-izquierdo .slider-derecho {
-    display: flex;
-    align-items: center;
+.slider-izquierdo img{
+  float: left;
+  width:50px;
+  
         
 }
-.slider-izquierdo img, .slider-derecho img {
-    width: 20%;
-
+.slider-derecho img{
+    display: flex;
+    align-items: center;
+    width:50px;
+        
 }
+/*--------------------------------------------------------------------------
+formulario de contacto    
+}*/
 
-
+.contacto-content{
+    padding-top: 100px;
+    background-color: rgb(222, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
 

@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="javascript.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contacto - Inner Sun Theory</title>
@@ -28,13 +28,42 @@
     </header>
     <!-- Contenido de la página de contacto -->
     <div class="contacto-content">
-    
+        <h1 id="contacto">Contactanos</h1>
+        <form id="contactForm">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span class="error" id="errorNombre"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="errorEmail"></span>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <span class="error" id="errorMensaje"></span>
+            </div>
+            <div class="noticias">
+                <input type="checkbox" id="recibirNoticias" name="recibirNoticias">
+                <label for="recibirNoticias">Deseo recibir noticias</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensajeEnviado" style="display: none;">
+            <h2>Datos Enviados:</h2>
+            <p><strong>Nombre:</strong> <span id="nombreEnviado"></span></p>
+            <p><strong>Email:</strong> <span id="emailEnviado"></span></p>
+            <p><strong>Mensaje:</strong> <span id="mensajeEnviado"></span></p>
+        </div>
 
     </div>
 
 
 
-
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 
 </html>
