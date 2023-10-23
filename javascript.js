@@ -12,18 +12,28 @@ var imagenes = [
 ];
 document.getElementById("Imagen").src = imagenes[0];
 
-const contenedor = document.querySelector(".contenedorCarrusel");
+const contenedor = document.querySelector(".contenedor-slider");
 const botonesIzquierda = document.querySelector(".slider-izquierdo");
 const botonesDerecha = document.querySelector(".slider-derecho");
 
 let siliderDerecha = document.querySelector(".der");
 let sliderIzquierda = document.querySelector(".izq");
 let contador = 0;
+
 function moverDerecha() {
   contador++;
   if (contador > imagenes.length - 1) {
     contador = 0;
   }
-  document.Imagen.src = imagenes[contador];
+  document.getElementById("Imagen").src = imagenes[contador];
 }
+
+function moverIzquierda() {
+  contador--;
+  if (contador < 0) {
+    contador = imagenes.length - 1;
+  }
+  document.getElementById("Imagen").src = imagenes[contador];
+}
+botonesIzquierda.addEventListener("click", moverIzquierda);
 botonesDerecha.addEventListener("click", moverDerecha);
