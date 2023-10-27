@@ -1,0 +1,118 @@
+
+*{
+
+   
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 111px;
+    padding: 5px 10%;
+}
+
+.header .logo img{
+    height: 95px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+
+.header .logo img:hover{
+    transform:scale(1.2);
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .links-nav{
+    list-style: none;
+}
+.header .links-nav li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .links-nav a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+.header .links-nav li a:hover{
+    color: rgb(255, 170, 0);
+}
+.header .links-nav li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.header .btn{
+    background: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: black;
+    margin-left: 20p;
+    border: none;
+    border-radius: 10px;
+}
+
+.header .btn button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgb(255, 170, 0);
+    color: white
+}
+
+ 
+ #imagen-fondo {
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#somos {
+    background-color: #33333319;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#somos h1 {
+    width: 100%;
+    margin: 0;
+    color: white;
+    padding-bottom: 200px;
+    background-color: #0000000f;
+}
+
+p {
+    padding: 15px;
+    line-height: 1.6;
+}
+#texto{
+   
+    color: white;
+    background-color: rgb(255, 170, 0);
+
+}

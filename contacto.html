@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +21,18 @@
         </div>
         <nav>
             <ul class="links-nav">
-                <li><a href="#">Quienes somos‎ ‎ ‎ </a></li>
+                <li><a href="quienesSomos.html">Quienes somos‎ ‎ ‎ </a></li>
             </ul>
         </nav>
 
     </header>
     <!-- Contenido de la página de contacto -->
-    <h1 class="contacto">Contactanos</h1>
-    <div class="contacto-content">
-        
+    <h1 class="contacto">Contactanos!</h1>
+
+    <div id="contacto-content">
         <form id="contactForm">
             <div>
-                <label for="nombre">Nombre:</label>
+                <label>Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
                 <span class="error" id="errorNombre"></span>
             </div>
@@ -53,18 +53,22 @@
 
             <button type="submit">Enviar</button>
         </form>
-        <div id="mensajeEnviado" style="display: none;">
+
+
+        <div id="datosEnviados" style="display: none;">
+
             <h2>Datos Enviados:</h2>
             <p><strong>Nombre:</strong> <span id="nombreEnviado"></span></p>
             <p><strong>Email:</strong> <span id="emailEnviado"></span></p>
             <p><strong>Mensaje:</strong> <span id="mensajeEnviado"></span></p>
+            <p>Recibirá noticias de nuestro club!<span id="Noticias"></span></p>
         </div>
+
 
     </div>
 
 
-
-    <script type="text/javascript" src="javascript.js"></script>
+    <script src="javascript2.js"></script>
 </body>
 
 </html>

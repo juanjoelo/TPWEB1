@@ -1,9 +1,12 @@
 function paginaInicio() {
-  window.location.href = "https://juanjoelo.github.io/TPWEB1/";
+  window.location.href = "index.html";
 }
 function paginaContacto() {
   window.location.href = "contacto.html";
 }
+//--------------------------------------------------------->
+//Imagenes y flechas
+console.log("funcionando1");
 var imagenes = [
   "IMAGENES/bowie.png",
   "IMAGENES/cerati.png",
