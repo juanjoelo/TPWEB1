@@ -20,7 +20,7 @@ document
       return;
     }
     // si el nombre es muy corto o largo...
-    if (nombre.length < 5 || nombre.length > 50) {
+    if (nombre.length < 2 || nombre.length > 50) {
       document.getElementById("errorNombre").innerHTML =
         "El nombre debe tener entre 5 y 50 caracteres";
       return;
