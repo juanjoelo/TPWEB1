@@ -99,10 +99,12 @@ body {
 }
 
 #somos h1 {
+    font-size: 3em; /* Ajusta este valor a tu gusto */
     width: 100%;
     margin: 0;
     color: white;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #0000000f;
 }
 
@@ -115,4 +117,12 @@ p {
     color: white;
     background-color: rgb(255, 170, 0);
 
+}
+#imagen{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+#imagen img{
+    width:400px;
 }

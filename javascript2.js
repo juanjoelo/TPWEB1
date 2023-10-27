@@ -19,7 +19,7 @@ document
     if (!nombre && !email && !mensaje && !recibirNoticias) {
       return;
     }
-    // Verifica la longitud del nombre
+    // si el nombre es muy corto o largo...
     if (nombre.length < 5 || nombre.length > 50) {
       document.getElementById("errorNombre").innerHTML =
         "El nombre debe tener entre 5 y 50 caracteres";
@@ -28,7 +28,7 @@ document
       document.getElementById("errorNombre").innerHTML = "";
     }
 
-    // Verifica la longitud del correo electrónico
+    // Verificar el maail.
     if (email.length < 10 || email.length > 100) {
       document.getElementById("errorEmail").innerHTML =
         "El correo electrónico debe tener entre 10 y 100 caracteres";
@@ -36,13 +36,15 @@ document
     } else {
       document.getElementById("errorEmail").innerHTML = "";
     }
-    if (email.indexOf("@") == -1) {
+
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
       document.getElementById("errorEmail").innerHTML =
-        "El correo electrónico debe contener al menos un símbolo @";
+        "Por favor ingrese un correo electrónico válido";
       return;
     } else {
       document.getElementById("errorEmail").innerHTML = "";
-    } 
+    }
 
     // Verifica la longitud del mensaje
     if (mensaje.length < 20 || mensaje.length > 500) {
@@ -81,12 +83,11 @@ document
       document.getElementById("errorMensaje").innerHTML = "";
     }
 
-    // Si hay algún campo vacío, no envía el formulario
+    // Si hay algun campo vacio, no envía el formulario
     if (!nombre || !email || !mensaje) {
       return;
     }
-
-    // Crea el elemento datosEnviados y lo agrega al DOM
+    //hacemos un "push" al dom.
     datosEnviados = document.createElement("div");
     datosEnviados.id = "datosEnviados";
     datosEnviados.innerHTML = `
