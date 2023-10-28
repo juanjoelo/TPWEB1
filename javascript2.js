@@ -15,7 +15,7 @@ document
     var mensaje = document.getElementById("mensaje").value;
     var recibirNoticias = document.getElementById("recibirNoticias").checked;
 
-    // Verifica si hay datos ingresados
+    // si hay datos ingresados
     if (!nombre && !email && !mensaje && !recibirNoticias) {
       return;
     }
@@ -28,7 +28,7 @@ document
       document.getElementById("errorNombre").innerHTML = "";
     }
 
-    // Verificar el maail.
+    // inspeccionar el maail.
     if (email.length < 10 || email.length > 100) {
       document.getElementById("errorEmail").innerHTML =
         "El correo electrónico debe tener entre 10 y 100 caracteres";
@@ -46,7 +46,7 @@ document
       document.getElementById("errorEmail").innerHTML = "";
     }
 
-    // Verifica la longitud del mensaje
+    // chequear la longitud del mensaje
     if (mensaje.length < 20 || mensaje.length > 500) {
       document.getElementById("errorMensaje").innerHTML =
         "El mensaje debe tener entre 20 y 500 caracteres";
@@ -61,7 +61,7 @@ document
       datosEnviados.remove();
     }
 
-    // Verifica si los campos obligatorios están vacíos
+    // verificar si los campos obligatorios estan vacios
     if (!nombre) {
       document.getElementById("errorNombre").innerHTML =
         "Por favor ingrese su nombre";
@@ -83,7 +83,7 @@ document
       document.getElementById("errorMensaje").innerHTML = "";
     }
 
-    // Si hay algun campo vacio, no envía el formulario
+    // si no escribio nada, no se envía nada.
     if (!nombre || !email || !mensaje) {
       return;
     }

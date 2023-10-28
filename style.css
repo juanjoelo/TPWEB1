@@ -162,16 +162,16 @@ formulario de contacto
     
 }
 form {
-    background-color: #f5f5f5; /* Color de fondo */
+    background-color: #f5f5f5;
     padding: 50px;
     padding-left: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-width: 400px; /* Ancho máximo del formulario */
-    margin: auto; /* Centrar el formulario horizontalmente */
+    max-width: 400px; 
+    margin: auto; 
 }
 
-/* Estilo de los campos de entrada */
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -182,29 +182,28 @@ textarea {
     border-radius: 5px;
 }
 
-/* Estilo de los botones */
+
 button {
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #007bff; 
+    color: #fff; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    cursor: pointer; 
 }
 .noticias{
     padding-bottom: 15px;
 }
 
 button:hover {
-    background-color: #0056b3; /* Cambio de color al pasar sobre el botón */
+    background-color: #0056b3; 
 }
 
-/* Estilo de etiquetas y elementos de formulario */
+
 label {
     font-weight: bold;
 }
 
-/* Estilo para los mensajes de error */
 .error {
     color: red;
     font-size: 14px;
