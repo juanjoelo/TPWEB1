@@ -27,6 +27,20 @@ document
     } else {
       document.getElementById("errorNombre").innerHTML = "";
     }
+    if (!nombre) {
+      document.getElementById("errorNombre").innerHTML =
+        "Por favor ingrese su nombre";
+    } else {
+      document.getElementById("errorNombre").innerHTML = "";
+    }
+    var nombreRegex = /^[A-Za-z]+$/;
+    if (!nombreRegex.test(nombre)) {
+      document.getElementById("errorNombre").innerHTML =
+        "El nombre solo debe contener letras.";
+      return;
+    } else {
+      document.getElementById("errorNombre").innerHTML = "";
+    }
 
     // inspeccionar el maail.
     if (email.length < 10 || email.length > 100) {
@@ -62,12 +76,6 @@ document
     }
 
     // verificar si los campos obligatorios estan vacios
-    if (!nombre) {
-      document.getElementById("errorNombre").innerHTML =
-        "Por favor ingrese su nombre";
-    } else {
-      document.getElementById("errorNombre").innerHTML = "";
-    }
 
     if (!email) {
       document.getElementById("errorEmail").innerHTML =
